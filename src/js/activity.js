@@ -12,13 +12,13 @@ fetch(apiUrl)
         const statusListening = document.getElementById('listening');
         const yandexMusic = data.activities.find(activity => activity.name === 'Yandex Music');
         if (yandexMusic) {
-            statusListening.textContent = `Listening: ${yandexMusic.details} - ${yandexMusic.state}`;
+            statusListening.textContent = `Ouvindo: ${yandexMusic.details} - ${yandexMusic.state}`;
         }
 
         const statusAPP = document.getElementById('APP');
         const game = data.activities.find(activity => activity.type === 0);
         if (game) {
-            statusAPP.textContent = `Playing: ${game.name}`;
+            statusAPP.textContent = `Jogando: ${game.name}`;
         }
     })
     .catch(error => {
