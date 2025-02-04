@@ -9,10 +9,10 @@ fetch(apiUrl)
             status.textContent = `Status: ${statusCurrent}`;
         }
 
-        const statusListening = document.getElementById('listening');
-        const yandexMusic = data.activities.find(activity => activity.name === 'Yandex Music');
+        const statusListening = document.getElementById('ouvindo');
+        const spotifyMusic = data.activities.find(activity => activity.name === 'Spotify');
         if (yandexMusic) {
-            statusListening.textContent = `Ouvindo: ${yandexMusic.details} - ${yandexMusic.state}`;
+            statusListening.textContent = `Ouvindo: ${spotifyMusic.details} - ${spotifyMusic.state}`;
         }
 
         const statusAPP = document.getElementById('APP');
