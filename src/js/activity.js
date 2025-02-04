@@ -11,7 +11,7 @@ fetch(apiUrl)
 
         const statusListening = document.getElementById('ouvindo');
         const spotifyMusic = data.activities.find(activity => activity.name === 'Spotify');
-        if (yandexMusic) {
+        if (spotifyMusic) {
             statusListening.textContent = `Ouvindo: ${spotifyMusic.details} - ${spotifyMusic.state}`;
         }
 
