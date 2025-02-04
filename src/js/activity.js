@@ -1,4 +1,4 @@
-const apiUrl = 'https://api.statusbadges.me/presence/679987861021655094';
+const apiUrl = 'https://api.statusbadges.me/presence/1083542161162780744';
 
 fetch(apiUrl)
     .then(response => response.json())
